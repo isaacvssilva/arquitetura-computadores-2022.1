@@ -19,18 +19,18 @@ CMAIN:
     ;input em c: scanf("%d", &iNum1)
     ;logica em assembly: da direita para a esquerda
     
-    push num1       ;instrucao push para input no endereco de n1 na pilha
+    push num1       ;instrucao push para input no endereco de num1 na pilha
     push scanfValue ;primeiro parametro do scanf em C: %d
     call scanf      ;insutracao call para chamar a funcao scanf
     add esp, 8      ;esvaziando pilha (cada push, 4 Bytes)
     
-    push num2       ;instrucao push para input no endereco de n1 na pilha
+    push num2       ;instrucao push para input no endereco de num2 na pilha
     push scanfValue ;primeiro parametro do scanf em C: %d
     call scanf      ;insutracao call para chamar a funcao scanf
     add esp, 8      ;esvaziando pilha (cada push, 4 Bytes)
     
-    mov eax, [num1] ;Movendo conteudo da variavel n1 para o registrador eax
-    mov ebx, [num2] ;Movendo conteudo da variavel n2 para o registrador ebx
+    mov eax, [num1] ;Movendo conteudo da variavel num1 para o registrador eax
+    mov ebx, [num2] ;Movendo conteudo da variavel num2 para o registrador ebx
     sub eax, ebx    ;Subtraindo (num1 - num2)
     
     push eax        ;instrucao push para eax (acumulador)
