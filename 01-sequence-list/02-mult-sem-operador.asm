@@ -45,7 +45,7 @@ CMAIN:
     mov [aux1], eax ;movendo conteudo de eax para a variavel auxilar
     loop .L1        ;finalizando loop (decremento automatico)
 
-    mov eax, 0      ;zerando abx
+    mov eax, 0      ;zerando eax
     mov ecx, [num3] ;registrador contador (qtd loop)
     
     .L2:
