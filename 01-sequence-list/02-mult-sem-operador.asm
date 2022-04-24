@@ -27,7 +27,7 @@ CMAIN:
     call scanf      ;insutracao call para chamar a funcao scanf
     add esp, 8      ;esvaziando pilha (cada push, 4 Bytes)
     
-    push num2       ;instrucao push para input no endereco de num1 na pilha
+    push num2       ;instrucao push para input no endereco de num2 na pilha
     push scanfValue ;primeiro parametro do scanf em C: %d
     call scanf      ;insutracao call para chamar a funcao scanf
     add esp, 8      ;esvaziando pilha (cada push, 4 Bytes)
@@ -45,11 +45,11 @@ CMAIN:
     mov [aux1], eax ;movendo conteudo de eax para a variavel auxilar
     loop .L1        ;finalizando loop (decremento automatico)
 
-    mov eax, 0      ;zerando ebx
+    mov eax, 0      ;zerando abx
     mov ecx, [num3] ;registrador contador (qtd loop)
     
     .L2:
-    add eax, [aux1] ;somando conteudo da variavel num1 com eax
+    add eax, [aux1] ;somando conteudo da variavel aux1 com eax
     mov [aux2], eax ;movendo conteudo de eax para a variavel auxilar
     loop .L2        ;finalizando loop (decremento automatico)
     
