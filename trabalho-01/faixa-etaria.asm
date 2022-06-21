@@ -1,4 +1,4 @@
-; Isaac Vinicius - 500035
+; Isaac Vinicius - 500935
 ; Mellyssa Alves - 495589
 
 extern scanf        ;biblioteca padrao C
