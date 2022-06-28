@@ -1,6 +1,6 @@
 # Aritmética Inteira
 
-## Quesão 1
+## Questão 1
 
 Sabendo que uma PG tem $a_{1}$ e razão q, determine a soma dos 10 primeiros termos dessa progressão.
 
@@ -26,7 +26,7 @@ O cálculo é dado pela equação abaixo:
 
 ---
 
-## Quesão 2
+## Questão 2
 
 Escreva um algoritmo que recebe um número **n** e uma base **b**.
 
